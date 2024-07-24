@@ -7,8 +7,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="{% static 'js/htmx.min.js' %}" defer></script>
     {% compress css %}
-    <link rel="stylesheet" href="{% static 'src/output.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/output.min.css' %}" />
     {% endcompress %}
   </head>
   <body class="bg-teal-500">
@@ -45,5 +46,7 @@
         </div>
       </div>
     </nav>
+
+    <div hx-get="/admin/" hx-swap="outerHTML">ADMIN</div>
   </body>
 </html>

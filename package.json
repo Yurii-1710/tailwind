@@ -1,7 +1,7 @@
 {
   
   "scripts": {
-    "build": "postcss src/static/src/input.css -o src/static/src/output.min.css --watch",
+    "build:tailwind": "postcss src/static/src/input.css -o src/static/src/output.min.css --watch",
     "watch": "npm-watch"
   },
   "devDependencies": {
