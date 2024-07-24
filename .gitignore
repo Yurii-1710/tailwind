@@ -5,3 +5,5 @@ static/
 __pycache__/
 .env
 db.sqlite3
+Dockerfile/
+docker-compose.yml/
