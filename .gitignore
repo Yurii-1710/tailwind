@@ -1,2 +1,7 @@
 node_modules/
 env/
+media/
+static/
+__pycache__/
+.env
+db.sqlite3

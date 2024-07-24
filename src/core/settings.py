@@ -1,5 +1,5 @@
 
-
+import dj_database_url
 from pathlib import Path
 from environ import Env
 
@@ -92,6 +92,10 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+POSTGRES_LOCALLY = False
+if ENVIRONMEMT == 'production' or POSTGRES_LOCALLY == True:
+    DATABASES['default'] = dj_database_url.parse(env('DATABASE_URL'))
 
 
 # Password validation
